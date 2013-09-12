@@ -1,0 +1,18 @@
+|deslocador
+clk => dataOut~reg0.CLK
+clk => qs[0].CLK
+clk => qs[1].CLK
+clk => qs[2].CLK
+clk => qs[3].CLK
+clr => qs[0].ACLR
+clr => qs[1].ACLR
+clr => qs[2].ACLR
+clr => qs[3].ACLR
+clr => dataOut~reg0.ENA
+paridade => ~NO_FANOUT~
+dataIn[0] => ~NO_FANOUT~
+dataIn[1] => ~NO_FANOUT~
+dataIn[2] => ~NO_FANOUT~
+dataOut <= dataOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

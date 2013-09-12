@@ -1,0 +1,6 @@
+
+State Machine - |serialassincrona|deslocador_uc:inst4|sreg
+Name sreg.esp sreg.a sreg.init 
+sreg.init 0 0 0 
+sreg.a 0 1 1 
+sreg.esp 1 0 1 

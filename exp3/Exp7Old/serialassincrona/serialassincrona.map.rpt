@@ -1,0 +1,362 @@
+Analysis & Synthesis report for serialassincrona
+Tue Feb 26 17:52:33 2013
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |serialassincrona|deslocador_uc:inst4|sreg
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Parameter Settings for User Entity Instance: 74163:inst6
+ 13. Parameter Settings for User Entity Instance: divfreq_gen:inst1
+ 14. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++-------------------------------+----------------------------------------------+
+; Analysis & Synthesis Status   ; Successful - Tue Feb 26 17:52:33 2013        ;
+; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
+; Revision Name                 ; serialassincrona                             ;
+; Top-level Entity Name         ; serialassincrona                             ;
+; Family                        ; Stratix II                                   ;
+; Logic utilization             ; N/A                                          ;
+;     Combinational ALUTs       ; 26                                           ;
+;     Dedicated logic registers ; 17                                           ;
+; Total registers               ; 17                                           ;
+; Total pins                    ; 10                                           ;
+; Total virtual pins            ; 0                                            ;
+; Total block memory bits       ; 0                                            ;
+; DSP block 9-bit elements      ; 0                                            ;
+; Total PLLs                    ; 0                                            ;
+; Total DLLs                    ; 0                                            ;
++-------------------------------+----------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; serialassincrona   ; serialassincrona   ;
+; Family name                                                                ; Stratix II         ; Stratix II         ;
+; Use Generated Physical Constraints File                                    ; Off                ;                    ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report                         ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                  ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                  ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------+
+; deslocador_uc.vhd                ; yes             ; User VHDL File                     ; C:/altera/91sp2/quartus/serialassincrona/deslocador_uc.vhd    ;
+; divfreq_gen.vhd                  ; yes             ; User VHDL File                     ; C:/altera/91sp2/quartus/serialassincrona/divfreq_gen.vhd      ;
+; geradorparidade.vhd              ; yes             ; User VHDL File                     ; C:/altera/91sp2/quartus/serialassincrona/geradorparidade.vhd  ;
+; INV1.vhd                         ; yes             ; User VHDL File                     ; C:/altera/91sp2/quartus/serialassincrona/INV1.vhd             ;
+; OUX2.vhd                         ; yes             ; User VHDL File                     ; C:/altera/91sp2/quartus/serialassincrona/OUX2.vhd             ;
+; serialassincrona.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/altera/91sp2/quartus/serialassincrona/serialassincrona.bdf ;
+; 74165.bdf                        ; yes             ; Megafunction                       ; c:/altera/91sp2/quartus/libraries/others/maxplus2/74165.bdf   ;
+; 74163.tdf                        ; yes             ; Megafunction                       ; c:/altera/91sp2/quartus/libraries/others/maxplus2/74163.tdf   ;
+; f74163.bdf                       ; yes             ; Megafunction                       ; c:/altera/91sp2/quartus/libraries/others/maxplus2/f74163.bdf  ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                ;
++-----------------------------------------------+----------------------------+
+; Resource                                      ; Usage                      ;
++-----------------------------------------------+----------------------------+
+; Estimated ALUTs Used                          ; 26                         ;
+; Dedicated logic registers                     ; 17                         ;
+;                                               ;                            ;
+; Estimated ALUTs Unavailable                   ; 0                          ;
+;                                               ;                            ;
+; Total combinational functions                 ; 26                         ;
+; Combinational ALUT usage by number of inputs  ;                            ;
+;     -- 7 input functions                      ; 0                          ;
+;     -- 6 input functions                      ; 0                          ;
+;     -- 5 input functions                      ; 3                          ;
+;     -- 4 input functions                      ; 4                          ;
+;     -- <=3 input functions                    ; 19                         ;
+;                                               ;                            ;
+; Combinational ALUTs by mode                   ;                            ;
+;     -- normal mode                            ; 26                         ;
+;     -- extended LUT mode                      ; 0                          ;
+;     -- arithmetic mode                        ; 0                          ;
+;     -- shared arithmetic mode                 ; 0                          ;
+;                                               ;                            ;
+; Estimated ALUT/register pairs used            ; 30                         ;
+;                                               ;                            ;
+; Total registers                               ; 17                         ;
+;     -- Dedicated logic registers              ; 17                         ;
+;     -- I/O registers                          ; 0                          ;
+;                                               ;                            ;
+; Estimated ALMs:  partially or completely used ; 15                         ;
+;                                               ;                            ;
+; I/O pins                                      ; 10                         ;
+; Maximum fan-out node                          ; deslocador_uc:inst4|sreg.a ;
+; Maximum fan-out                               ; 19                         ;
+; Total fan-out                                 ; 133                        ;
+; Average fan-out                               ; 2.51                       ;
++-----------------------------------------------+----------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                      ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                            ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------+--------------+
+; |serialassincrona          ; 26 (1)            ; 17 (0)       ; 0                 ; 0            ; 0       ; 0         ; 0         ; 10   ; 0            ; |serialassincrona                              ; work         ;
+;    |74163:inst6|           ; 4 (0)             ; 4 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |serialassincrona|74163:inst6                  ; work         ;
+;       |f74163:sub|         ; 4 (4)             ; 4 (4)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |serialassincrona|74163:inst6|f74163:sub       ; work         ;
+;    |74165:inst11|          ; 4 (4)             ; 2 (2)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |serialassincrona|74165:inst11                 ; work         ;
+;    |74165:inst2|           ; 12 (12)           ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |serialassincrona|74165:inst2                  ;              ;
+;    |deslocador_uc:inst4|   ; 3 (3)             ; 2 (2)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |serialassincrona|deslocador_uc:inst4          ; work         ;
+;    |divfreq_gen:inst1|     ; 1 (1)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |serialassincrona|divfreq_gen:inst1            ; work         ;
+;    |geradorparidade:inst|  ; 1 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |serialassincrona|geradorparidade:inst         ; work         ;
+;       |OUX2:X6|            ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |serialassincrona|geradorparidade:inst|OUX2:X6 ; work         ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------+
+; State Machine - |serialassincrona|deslocador_uc:inst4|sreg ;
++-----------+----------+--------+----------------------------+
+; Name      ; sreg.esp ; sreg.a ; sreg.init                  ;
++-----------+----------+--------+----------------------------+
+; sreg.init ; 0        ; 0      ; 0                          ;
+; sreg.a    ; 0        ; 1      ; 1                          ;
+; sreg.esp  ; 1        ; 0      ; 1                          ;
++-----------+----------+--------+----------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; divfreq_gen:inst1|contagem            ; Lost fanout                            ;
+; 74165:inst11|38                       ; Stuck at VCC due to stuck port data_in ;
+; 74165:inst11|37                       ; Stuck at VCC due to stuck port data_in ;
+; 74165:inst11|65                       ; Stuck at VCC due to stuck port data_in ;
+; 74165:inst11|70                       ; Stuck at VCC due to stuck port data_in ;
+; 74165:inst11|79                       ; Stuck at VCC due to stuck port data_in ;
+; 74165:inst11|84                       ; Stuck at VCC due to stuck port data_in ;
+; deslocador_uc:inst4|sreg.esp          ; Lost fanout                            ;
+; Total Number of Removed Registers = 8 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                       ;
++-----------------+---------------------------+-------------------------------------------------------------------------------------+
+; Register name   ; Reason for Removal        ; Registers Removed due to This Register                                              ;
++-----------------+---------------------------+-------------------------------------------------------------------------------------+
+; 74165:inst11|38 ; Stuck at VCC              ; 74165:inst11|37, 74165:inst11|65, 74165:inst11|70, 74165:inst11|79, 74165:inst11|84 ;
+;                 ; due to stuck port data_in ;                                                                                     ;
++-----------------+---------------------------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 17    ;
+; Number of registers using Synchronous Clear  ; 2     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 10    ;
+; Number of registers using Asynchronous Load  ; 8     ;
+; Number of registers using Clock Enable       ; 10    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: 74163:inst6 ;
++------------------------+------------+--------------------+
+; Parameter Name         ; Value      ; Type               ;
++------------------------+------------+--------------------+
+; DEVICE_FAMILY          ; Stratix II ; Untyped            ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY         ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY       ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE       ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE     ;
++------------------------+------------+--------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divfreq_gen:inst1 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; fator          ; 2     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Feb 26 17:52:31 2013
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off serialassincrona -c serialassincrona
+Info: Found 2 design units, including 1 entities, in source file deslocador_uc.vhd
+    Info: Found design unit 1: deslocador_uc-yay
+    Info: Found entity 1: deslocador_uc
+Info: Found 2 design units, including 1 entities, in source file divfreq_gen.vhd
+    Info: Found design unit 1: divfreq_gen-arch_d
+    Info: Found entity 1: divfreq_gen
+Info: Found 2 design units, including 1 entities, in source file geradorparidade.vhd
+    Info: Found design unit 1: geradorparidade-yay
+    Info: Found entity 1: geradorparidade
+Info: Found 2 design units, including 1 entities, in source file inv1.vhd
+    Info: Found design unit 1: INV1-yay
+    Info: Found entity 1: INV1
+Info: Found 2 design units, including 1 entities, in source file oux2.vhd
+    Info: Found design unit 1: OUX2-yay
+    Info: Found entity 1: OUX2
+Info: Found 1 design units, including 1 entities, in source file serialassincrona.bdf
+    Info: Found entity 1: serialassincrona
+Info: Elaborating entity "serialassincrona" for the top level hierarchy
+Info: Elaborating entity "74165" for hierarchy "74165:inst2"
+Info: Elaborated megafunction instantiation "74165:inst2"
+Info: Elaborating entity "deslocador_uc" for hierarchy "deslocador_uc:inst4"
+Info: Elaborating entity "74163" for hierarchy "74163:inst6"
+Info: Elaborated megafunction instantiation "74163:inst6"
+Info: Elaborating entity "f74163" for hierarchy "74163:inst6|f74163:sub"
+Info: Elaborated megafunction instantiation "74163:inst6|f74163:sub", which is child of megafunction instantiation "74163:inst6"
+Info: Elaborating entity "divfreq_gen" for hierarchy "divfreq_gen:inst1"
+Info: Elaborating entity "geradorparidade" for hierarchy "geradorparidade:inst"
+Info: Elaborating entity "OUX2" for hierarchy "geradorparidade:inst|OUX2:X1"
+Info: Elaborating entity "INV1" for hierarchy "geradorparidade:inst|INV1:I1"
+Info: Ignored 5 buffer(s)
+    Info: Ignored 5 CARRY buffer(s)
+Info: 2 registers lost all their fanouts during netlist optimizations. The first 2 are displayed below.
+    Info: Register "divfreq_gen:inst1|contagem" lost all its fanouts during netlist optimizations.
+    Info: Register "deslocador_uc:inst4|sreg.esp" lost all its fanouts during netlist optimizations.
+Info: Implemented 46 device resources after synthesis - the final resource count might be different
+    Info: Implemented 9 input pins
+    Info: Implemented 1 output pins
+    Info: Implemented 36 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 236 megabytes
+    Info: Processing ended: Tue Feb 26 17:52:33 2013
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

@@ -1,0 +1,52 @@
+|geradorparidade
+b0 => OUX2:X1.x
+b1 => OUX2:X1.y
+b2 => OUX2:X2.x
+b3 => OUX2:X2.y
+b4 => OUX2:X3.x
+b5 => OUX2:X3.y
+b6 => OUX2:X5.y
+b7 <= INV1:I1.y
+
+
+|geradorparidade|OUX2:X1
+x => z.IN0
+y => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|geradorparidade|OUX2:X2
+x => z.IN0
+y => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|geradorparidade|OUX2:X3
+x => z.IN0
+y => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|geradorparidade|OUX2:X4
+x => z.IN0
+y => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|geradorparidade|OUX2:X5
+x => z.IN0
+y => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|geradorparidade|OUX2:X6
+x => z.IN0
+y => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|geradorparidade|INV1:I1
+x => y.DATAIN
+y <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+

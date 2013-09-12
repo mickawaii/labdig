@@ -1,0 +1,202 @@
+|serialassincrona
+DSERIAL <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B3 => 74165:inst2.D
+B3 => geradorparidade:inst.b2
+B4 => 74165:inst2.C
+B4 => geradorparidade:inst.b1
+B5 => 74165:inst2.B
+B5 => geradorparidade:inst.b0
+B0 => 74165:inst2.G
+B0 => geradorparidade:inst.b5
+B6 => 74165:inst2.A
+B6 => geradorparidade:inst.b6
+PARTIDA => deslocador_uc:inst4.iniciar
+CLOCK => divfreq_gen:inst1.clock
+B2 => 74165:inst2.E
+B2 => geradorparidade:inst.b3
+B1 => 74165:inst2.F
+B1 => geradorparidade:inst.b4
+CLOCK2 <= divfreq_gen:inst1.q
+
+
+|serialassincrona|74165:inst2
+QHN <= 110.DB_MAX_OUTPUT_PORT_TYPE
+H => 96.IN0
+STLD => 106.IN0
+CLK => 98.CLK
+CLK => 93.CLK
+CLK => 84.CLK
+CLK => 79.CLK
+CLK => 70.CLK
+CLK => 65.CLK
+CLK => 37.CLK
+CLK => 38.CLK
+G => 95.IN0
+F => 82.IN0
+E => 81.IN0
+D => 68.IN0
+C => 67.IN0
+B => 111.IN0
+A => 29.IN0
+SER => 55.IN0
+CLKIH => 107.IN0
+CLKIH => 57.IN0
+CLKIH => 58.IN0
+CLKIH => 63.IN0
+CLKIH => 72.IN0
+CLKIH => 77.IN0
+CLKIH => 86.IN0
+CLKIH => 91.IN0
+CLKIH => 100.IN0
+QH <= 98.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serialassincrona|deslocador_uc:inst4
+iniciar => snext.init.DATAA
+iniciar => Selector0.IN1
+iniciar => Selector1.IN1
+fim => Selector1.IN2
+fim => Selector0.IN2
+clock => sreg~1.DATAIN
+send <= send.DB_MAX_OUTPUT_PORT_TYPE
+load <= load.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serialassincrona|74163:inst6
+clk => f74163:sub.clk
+ldn => f74163:sub.ldn
+clrn => f74163:sub.clrn
+enp => f74163:sub.enp
+ent => f74163:sub.ent
+d => f74163:sub.d
+c => f74163:sub.c
+b => f74163:sub.b
+a => f74163:sub.a
+qd <= f74163:sub.qd
+qc <= f74163:sub.qc
+qb <= f74163:sub.qb
+qa <= f74163:sub.qa
+rco <= f74163:sub.rco
+
+
+|serialassincrona|74163:inst6|f74163:sub
+RCO <= 129.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 134.CLK
+CLK => 122.CLK
+CLK => 111.CLK
+CLK => 34.CLK
+CLRN => 137.IN0
+CLRN => 126.IN0
+CLRN => 115.IN0
+CLRN => 68.IN0
+D => 136.IN0
+LDN => 144.IN0
+LDN => 132.IN0
+LDN => 121.IN0
+LDN => 110.IN0
+LDN => 71.IN0
+ENP => 130.IN0
+ENP => 119.IN0
+ENP => 108.IN0
+ENP => 105.IN0
+C => 124.IN0
+B => 113.IN0
+A => 70.IN0
+ENT => 140.DATAIN
+QD <= 134.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 122.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 111.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 34.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serialassincrona|divfreq_gen:inst1
+clock => q_tmp.CLK
+clock => contagem[0].CLK
+clock => contagem[1].CLK
+q <= q_tmp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serialassincrona|74165:inst11
+QHN <= 110.DB_MAX_OUTPUT_PORT_TYPE
+H => 96.IN0
+STLD => 106.IN0
+CLK => 98.CLK
+CLK => 93.CLK
+CLK => 84.CLK
+CLK => 79.CLK
+CLK => 70.CLK
+CLK => 65.CLK
+CLK => 37.CLK
+CLK => 38.CLK
+G => 95.IN0
+F => 82.IN0
+E => 81.IN0
+D => 68.IN0
+C => 67.IN0
+B => 111.IN0
+A => 29.IN0
+SER => 55.IN0
+CLKIH => 107.IN0
+CLKIH => 57.IN0
+CLKIH => 58.IN0
+CLKIH => 63.IN0
+CLKIH => 72.IN0
+CLKIH => 77.IN0
+CLKIH => 86.IN0
+CLKIH => 91.IN0
+CLKIH => 100.IN0
+QH <= 98.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serialassincrona|geradorparidade:inst
+b0 => OUX2:X1.x
+b1 => OUX2:X1.y
+b2 => OUX2:X2.x
+b3 => OUX2:X2.y
+b4 => OUX2:X3.x
+b5 => OUX2:X3.y
+b6 => OUX2:X5.y
+b7 <= INV1:I1.y
+
+
+|serialassincrona|geradorparidade:inst|OUX2:X1
+x => z.IN0
+y => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serialassincrona|geradorparidade:inst|OUX2:X2
+x => z.IN0
+y => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serialassincrona|geradorparidade:inst|OUX2:X3
+x => z.IN0
+y => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serialassincrona|geradorparidade:inst|OUX2:X4
+x => z.IN0
+y => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serialassincrona|geradorparidade:inst|OUX2:X5
+x => z.IN0
+y => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serialassincrona|geradorparidade:inst|OUX2:X6
+x => z.IN0
+y => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serialassincrona|geradorparidade:inst|INV1:I1
+x => y.DATAIN
+y <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+

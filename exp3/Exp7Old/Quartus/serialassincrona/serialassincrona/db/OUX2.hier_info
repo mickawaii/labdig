@@ -1,0 +1,6 @@
+|OUX2
+x => z.IN0
+y => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
