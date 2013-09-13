@@ -784,38 +784,6 @@ applicable agreement for further details.
 		(line (pt 8 8)(pt 24 8)(line_width 1))
 	)
 )
-(symbol
-	(rect 376 448 472 544)
-	(text "divfreq_gen" (rect 5 0 64 12)(font "Arial" ))
-	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "clock" (rect 0 0 25 12)(font "Arial" ))
-		(text "clock" (rect 21 27 46 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 1))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "q" (rect 0 0 5 12)(font "Arial" ))
-		(text "q" (rect 70 27 75 39)(font "Arial" ))
-		(line (pt 96 32)(pt 80 32)(line_width 1))
-	)
-	(parameter
-		"fator"
-		"4"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(rectangle (rect 16 16 80 80)(line_width 1))
-	)
-	(annotation_block (parameter)(rect 376 544 544 576))
-)
-(connector
-	(pt 568 480)
-	(pt 472 480)
-)
 (connector
 	(pt 568 440)
 	(pt 56 440)
@@ -1101,10 +1069,6 @@ applicable agreement for further details.
 	(pt 680 560)
 )
 (connector
-	(pt 232 480)
-	(pt 376 480)
-)
-(connector
 	(pt 448 80)
 	(pt 432 80)
 )
@@ -1259,6 +1223,10 @@ applicable agreement for further details.
 (connector
 	(pt 680 480)
 	(pt 680 496)
+)
+(connector
+	(pt 232 480)
+	(pt 568 480)
 )
 (junction (pt 568 440))
 (junction (pt 224 24))

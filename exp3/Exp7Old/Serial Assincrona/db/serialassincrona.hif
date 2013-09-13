@@ -26,7 +26,7 @@ db|serialassincrona.(1).cnf
 db|serialassincrona.(1).cnf
 # case_insensitive
 # source_file
-|altera|91sp2|quartus|libraries|others|maxplus2|74165.bdf
+|quartus|libraries|others|maxplus2|74165.bdf
 e0ca4e9579919cec6ccf3c2a967f903d
 26
 # internal_option {
@@ -41,150 +41,10 @@ AUTO
 
 # end
 # entity
-geradorparidade
-# storage
-db|serialassincrona.(2).cnf
-db|serialassincrona.(2).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-geradorparidade.vhd
-5559de2880631c58d9d0b62861ae527
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-geradorparidade:inst
-}
-# lmf
-|altera|91sp2|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
-OUX2
-# storage
-db|serialassincrona.(3).cnf
-db|serialassincrona.(3).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-oux2.vhd
-7e60cfb5b883dfdacd16eb20ac3cdf
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-geradorparidade:inst|OUX2:X1
-geradorparidade:inst|OUX2:X2
-geradorparidade:inst|OUX2:X3
-geradorparidade:inst|OUX2:X4
-geradorparidade:inst|OUX2:X5
-geradorparidade:inst|OUX2:X6
-}
-# lmf
-|altera|91sp2|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
-INV1
-# storage
-db|serialassincrona.(4).cnf
-db|serialassincrona.(4).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-inv1.vhd
-186c14899a28b04fed486734b9346422
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-geradorparidade:inst|INV1:I1
-}
-# lmf
-|altera|91sp2|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
-divfreq_gen
-# storage
-db|serialassincrona.(5).cnf
-db|serialassincrona.(5).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-divfreq_gen.vhd
-44b784987d4e143ea5f1f58b1deea38
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
-fator
-2
-PARAMETER_SIGNED_DEC
-USR
-}
-# lmf
-|altera|91sp2|quartus|lmf|maxplus2.lmf
-a36c8ec425c8a2589af98b2d4daabc3
-# macro_sequence
-
-# end
-# entity
 deslocador_uc
 # storage
-db|serialassincrona.(6).cnf
-db|serialassincrona.(6).cnf
+db|serialassincrona.(2).cnf
+db|serialassincrona.(2).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -208,7 +68,7 @@ ON
 deslocador_uc:inst4
 }
 # lmf
-|altera|91sp2|quartus|lmf|maxplus2.lmf
+|quartus|lmf|maxplus2.lmf
 a36c8ec425c8a2589af98b2d4daabc3
 # macro_sequence
 
@@ -216,11 +76,11 @@ a36c8ec425c8a2589af98b2d4daabc3
 # entity
 74163
 # storage
-db|serialassincrona.(7).cnf
-db|serialassincrona.(7).cnf
+db|serialassincrona.(3).cnf
+db|serialassincrona.(3).cnf
 # case_insensitive
 # source_file
-|altera|91sp2|quartus|libraries|others|maxplus2|74163.tdf
+|quartus|libraries|others|maxplus2|74163.tdf
 7b6eab8239cb61d11fdf639ae0d920
 7
 # user_parameter {
@@ -286,11 +146,11 @@ A
 # entity
 f74163
 # storage
-db|serialassincrona.(8).cnf
-db|serialassincrona.(8).cnf
+db|serialassincrona.(4).cnf
+db|serialassincrona.(4).cnf
 # case_insensitive
 # source_file
-|altera|91sp2|quartus|libraries|others|maxplus2|f74163.bdf
+|quartus|libraries|others|maxplus2|f74163.bdf
 9cc9fa2c3e7f5da9d94821209d4efe
 26
 # internal_option {
@@ -306,8 +166,8 @@ AUTO
 # entity
 divfreq_gen
 # storage
-db|serialassincrona.(9).cnf
-db|serialassincrona.(9).cnf
+db|serialassincrona.(5).cnf
+db|serialassincrona.(5).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -333,11 +193,112 @@ fator
 PARAMETER_SIGNED_DEC
 USR
 }
+# lmf
+|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+geradorparidade
+# storage
+db|serialassincrona.(6).cnf
+db|serialassincrona.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+geradorparidade.vhd
+5559de2880631c58d9d0b62861ae527
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
 # hierarchies {
-divfreq_gen:inst1
+geradorparidade:inst
 }
 # lmf
-|altera|91sp2|quartus|lmf|maxplus2.lmf
+|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+OUX2
+# storage
+db|serialassincrona.(7).cnf
+db|serialassincrona.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+oux2.vhd
+7e60cfb5b883dfdacd16eb20ac3cdf
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+geradorparidade:inst|OUX2:X1
+geradorparidade:inst|OUX2:X2
+geradorparidade:inst|OUX2:X3
+geradorparidade:inst|OUX2:X4
+geradorparidade:inst|OUX2:X5
+geradorparidade:inst|OUX2:X6
+}
+# lmf
+|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+INV1
+# storage
+db|serialassincrona.(8).cnf
+db|serialassincrona.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+inv1.vhd
+186c14899a28b04fed486734b9346422
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+geradorparidade:inst|INV1:I1
+}
+# lmf
+|quartus|lmf|maxplus2.lmf
 a36c8ec425c8a2589af98b2d4daabc3
 # macro_sequence
 
@@ -350,7 +311,7 @@ db|serialassincrona.(0).cnf
 # case_insensitive
 # source_file
 serialassincrona.bdf
-94c626682b899d995287db17dec5e42
+c27a38384921b44e684726c3e141e
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

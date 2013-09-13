@@ -1,5 +1,5 @@
 Analysis & Synthesis report for serialassincrona
-Tue Feb 26 18:09:11 2013
+Thu Sep 12 19:47:01 2013
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -17,10 +17,8 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   9. Registers Removed During Synthesis
  10. Removed Registers Triggering Further Register Optimizations
  11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: 74163:inst6
- 14. Parameter Settings for User Entity Instance: divfreq_gen:inst1
- 15. Analysis & Synthesis Messages
+ 12. Parameter Settings for User Entity Instance: 74163:inst6
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -46,15 +44,15 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Tue Feb 26 18:09:11 2013        ;
+; Analysis & Synthesis Status   ; Successful - Thu Sep 12 19:47:01 2013        ;
 ; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                 ; serialassincrona                             ;
 ; Top-level Entity Name         ; serialassincrona                             ;
 ; Family                        ; Stratix II                                   ;
 ; Logic utilization             ; N/A                                          ;
-;     Combinational ALUTs       ; 27                                           ;
-;     Dedicated logic registers ; 17                                           ;
-; Total registers               ; 17                                           ;
+;     Combinational ALUTs       ; 25                                           ;
+;     Dedicated logic registers ; 15                                           ;
+; Total registers               ; 15                                           ;
 ; Total pins                    ; 11                                           ;
 ; Total virtual pins            ; 0                                            ;
 ; Total block memory bits       ; 0                                            ;
@@ -150,26 +148,25 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 2      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                  ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                  ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------+
-; deslocador_uc.vhd                ; yes             ; User VHDL File                     ; C:/altera/91sp2/quartus/serialassincrona/deslocador_uc.vhd    ;
-; divfreq_gen.vhd                  ; yes             ; User VHDL File                     ; C:/altera/91sp2/quartus/serialassincrona/divfreq_gen.vhd      ;
-; geradorparidade.vhd              ; yes             ; User VHDL File                     ; C:/altera/91sp2/quartus/serialassincrona/geradorparidade.vhd  ;
-; INV1.vhd                         ; yes             ; User VHDL File                     ; C:/altera/91sp2/quartus/serialassincrona/INV1.vhd             ;
-; OUX2.vhd                         ; yes             ; User VHDL File                     ; C:/altera/91sp2/quartus/serialassincrona/OUX2.vhd             ;
-; serialassincrona.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/altera/91sp2/quartus/serialassincrona/serialassincrona.bdf ;
-; 74165.bdf                        ; yes             ; Megafunction                       ; c:/altera/91sp2/quartus/libraries/others/maxplus2/74165.bdf   ;
-; 74163.tdf                        ; yes             ; Megafunction                       ; c:/altera/91sp2/quartus/libraries/others/maxplus2/74163.tdf   ;
-; f74163.bdf                       ; yes             ; Megafunction                       ; c:/altera/91sp2/quartus/libraries/others/maxplus2/f74163.bdf  ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                       ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                       ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+
+; deslocador_uc.vhd                ; yes             ; User VHDL File                     ; C:/Users/mick/Documents/labdig/exp3/Exp7Old/Serial Assincrona/deslocador_uc.vhd    ;
+; geradorparidade.vhd              ; yes             ; User VHDL File                     ; C:/Users/mick/Documents/labdig/exp3/Exp7Old/Serial Assincrona/geradorparidade.vhd  ;
+; INV1.vhd                         ; yes             ; User VHDL File                     ; C:/Users/mick/Documents/labdig/exp3/Exp7Old/Serial Assincrona/INV1.vhd             ;
+; OUX2.vhd                         ; yes             ; User VHDL File                     ; C:/Users/mick/Documents/labdig/exp3/Exp7Old/Serial Assincrona/OUX2.vhd             ;
+; serialassincrona.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/mick/Documents/labdig/exp3/Exp7Old/Serial Assincrona/serialassincrona.bdf ;
+; 74165.bdf                        ; yes             ; Megafunction                       ; c:/quartus/libraries/others/maxplus2/74165.bdf                                     ;
+; 74163.tdf                        ; yes             ; Megafunction                       ; c:/quartus/libraries/others/maxplus2/74163.tdf                                     ;
+; f74163.bdf                       ; yes             ; Megafunction                       ; c:/quartus/libraries/others/maxplus2/f74163.bdf                                    ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------+
@@ -177,38 +174,38 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------------------------+----------------------------+
 ; Resource                                      ; Usage                      ;
 +-----------------------------------------------+----------------------------+
-; Estimated ALUTs Used                          ; 27                         ;
-; Dedicated logic registers                     ; 17                         ;
+; Estimated ALUTs Used                          ; 25                         ;
+; Dedicated logic registers                     ; 15                         ;
 ;                                               ;                            ;
 ; Estimated ALUTs Unavailable                   ; 0                          ;
 ;                                               ;                            ;
-; Total combinational functions                 ; 27                         ;
+; Total combinational functions                 ; 25                         ;
 ; Combinational ALUT usage by number of inputs  ;                            ;
 ;     -- 7 input functions                      ; 0                          ;
 ;     -- 6 input functions                      ; 0                          ;
 ;     -- 5 input functions                      ; 3                          ;
 ;     -- 4 input functions                      ; 4                          ;
-;     -- <=3 input functions                    ; 20                         ;
+;     -- <=3 input functions                    ; 18                         ;
 ;                                               ;                            ;
 ; Combinational ALUTs by mode                   ;                            ;
-;     -- normal mode                            ; 27                         ;
+;     -- normal mode                            ; 25                         ;
 ;     -- extended LUT mode                      ; 0                          ;
 ;     -- arithmetic mode                        ; 0                          ;
 ;     -- shared arithmetic mode                 ; 0                          ;
 ;                                               ;                            ;
-; Estimated ALUT/register pairs used            ; 30                         ;
+; Estimated ALUT/register pairs used            ; 28                         ;
 ;                                               ;                            ;
-; Total registers                               ; 17                         ;
-;     -- Dedicated logic registers              ; 17                         ;
+; Total registers                               ; 15                         ;
+;     -- Dedicated logic registers              ; 15                         ;
 ;     -- I/O registers                          ; 0                          ;
 ;                                               ;                            ;
-; Estimated ALMs:  partially or completely used ; 15                         ;
+; Estimated ALMs:  partially or completely used ; 14                         ;
 ;                                               ;                            ;
 ; I/O pins                                      ; 11                         ;
 ; Maximum fan-out node                          ; deslocador_uc:inst4|sreg.a ;
 ; Maximum fan-out                               ; 18                         ;
-; Total fan-out                                 ; 134                        ;
-; Average fan-out                               ; 2.44                       ;
+; Total fan-out                                 ; 127                        ;
+; Average fan-out                               ; 2.49                       ;
 +-----------------------------------------------+----------------------------+
 
 
@@ -217,13 +214,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                            ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------+--------------+
-; |serialassincrona          ; 27 (1)            ; 17 (0)       ; 0                 ; 0            ; 0       ; 0         ; 0         ; 11   ; 0            ; |serialassincrona                              ; work         ;
+; |serialassincrona          ; 25 (1)            ; 15 (0)       ; 0                 ; 0            ; 0       ; 0         ; 0         ; 11   ; 0            ; |serialassincrona                              ; work         ;
 ;    |74163:inst6|           ; 4 (0)             ; 4 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |serialassincrona|74163:inst6                  ; work         ;
 ;       |f74163:sub|         ; 4 (4)             ; 4 (4)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |serialassincrona|74163:inst6|f74163:sub       ; work         ;
 ;    |74165:inst11|          ; 2 (2)             ; 1 (1)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |serialassincrona|74165:inst11                 ; work         ;
 ;    |74165:inst2|           ; 14 (14)           ; 8 (8)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |serialassincrona|74165:inst2                  ;              ;
 ;    |deslocador_uc:inst4|   ; 3 (3)             ; 2 (2)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |serialassincrona|deslocador_uc:inst4          ; work         ;
-;    |divfreq_gen:inst1|     ; 2 (2)             ; 2 (2)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |serialassincrona|divfreq_gen:inst1            ; work         ;
 ;    |geradorparidade:inst|  ; 1 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |serialassincrona|geradorparidade:inst         ; work         ;
 ;       |OUX2:X6|            ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |serialassincrona|geradorparidade:inst|OUX2:X6 ; work         ;
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------+--------------+
@@ -254,9 +250,8 @@ Encoding Type:  One-Hot
 ; 74165:inst11|79                       ; Stuck at VCC due to stuck port data_in ;
 ; 74165:inst11|84                       ; Stuck at VCC due to stuck port data_in ;
 ; 74165:inst11|93                       ; Stuck at VCC due to stuck port data_in ;
-; divfreq_gen:inst1|contagem[1]         ; Lost fanout                            ;
 ; deslocador_uc:inst4|sreg.esp          ; Lost fanout                            ;
-; Total Number of Removed Registers = 9 ;                                        ;
+; Total Number of Removed Registers = 8 ;                                        ;
 +---------------------------------------+----------------------------------------+
 
 
@@ -275,7 +270,7 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 17    ;
+; Total registers                              ; 15    ;
 ; Number of registers using Synchronous Clear  ; 2     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 9     ;
@@ -283,15 +278,6 @@ Encoding Type:  One-Hot
 ; Number of registers using Clock Enable       ; 9     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 ALUTs       ; 2 ALUTs              ; 2 ALUTs                ; Yes        ; |serialassincrona|divfreq_gen:inst1|contagem[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
 
 
 +----------------------------------------------------------+
@@ -308,24 +294,16 @@ Encoding Type:  One-Hot
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: divfreq_gen:inst1 ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; fator          ; 4     ; Signed Integer                        ;
-+----------------+-------+---------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue Feb 26 18:09:10 2013
+    Info: Processing started: Thu Sep 12 19:46:54 2013
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off serialassincrona -c serialassincrona
+Warning: Tcl Script File ../../../../../../Desktop/lpm_divide0.qip not found
+    Info: set_global_assignment -name QIP_FILE ../../../../../../Desktop/lpm_divide0.qip
 Info: Found 2 design units, including 1 entities, in source file deslocador_uc.vhd
     Info: Found design unit 1: deslocador_uc-yay
     Info: Found entity 1: deslocador_uc
@@ -351,23 +329,21 @@ Info: Elaborating entity "74163" for hierarchy "74163:inst6"
 Info: Elaborated megafunction instantiation "74163:inst6"
 Info: Elaborating entity "f74163" for hierarchy "74163:inst6|f74163:sub"
 Info: Elaborated megafunction instantiation "74163:inst6|f74163:sub", which is child of megafunction instantiation "74163:inst6"
-Info: Elaborating entity "divfreq_gen" for hierarchy "divfreq_gen:inst1"
 Info: Elaborating entity "geradorparidade" for hierarchy "geradorparidade:inst"
 Info: Elaborating entity "OUX2" for hierarchy "geradorparidade:inst|OUX2:X1"
 Info: Elaborating entity "INV1" for hierarchy "geradorparidade:inst|INV1:I1"
 Info: Ignored 5 buffer(s)
     Info: Ignored 5 CARRY buffer(s)
-Info: 2 registers lost all their fanouts during netlist optimizations. The first 2 are displayed below.
-    Info: Register "divfreq_gen:inst1|contagem[1]" lost all its fanouts during netlist optimizations.
+Info: 1 registers lost all their fanouts during netlist optimizations. The first 1 are displayed below.
     Info: Register "deslocador_uc:inst4|sreg.esp" lost all its fanouts during netlist optimizations.
-Info: Implemented 47 device resources after synthesis - the final resource count might be different
+Info: Implemented 45 device resources after synthesis - the final resource count might be different
     Info: Implemented 9 input pins
     Info: Implemented 2 output pins
-    Info: Implemented 36 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 236 megabytes
-    Info: Processing ended: Tue Feb 26 18:09:11 2013
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Implemented 34 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 221 megabytes
+    Info: Processing ended: Thu Sep 12 19:47:01 2013
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:05
 
 

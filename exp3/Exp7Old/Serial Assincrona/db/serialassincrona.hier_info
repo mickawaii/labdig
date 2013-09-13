@@ -11,12 +11,16 @@ B0 => geradorparidade:inst.b5
 B6 => 74165:inst2.A
 B6 => geradorparidade:inst.b6
 PARTIDA => deslocador_uc:inst4.iniciar
-CLOCK => divfreq_gen:inst1.clock
+CLOCK => 74163:inst6.CLK
+CLOCK => deslocador_uc:inst4.clock
+CLOCK => 74165:inst2.CLK
+CLOCK => 74165:inst11.CLK
+CLOCK => CLOCK2.DATAIN
 B2 => 74165:inst2.E
 B2 => geradorparidade:inst.b3
 B1 => 74165:inst2.F
 B1 => geradorparidade:inst.b4
-CLOCK2 <= divfreq_gen:inst1.q
+CLOCK2 <= CLOCK.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |serialassincrona|74165:inst2
@@ -107,13 +111,6 @@ QD <= 134.DB_MAX_OUTPUT_PORT_TYPE
 QC <= 122.DB_MAX_OUTPUT_PORT_TYPE
 QB <= 111.DB_MAX_OUTPUT_PORT_TYPE
 QA <= 34.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|serialassincrona|divfreq_gen:inst1
-clock => q_tmp.CLK
-clock => contagem[0].CLK
-clock => contagem[1].CLK
-q <= q_tmp.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |serialassincrona|74165:inst11

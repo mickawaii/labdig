@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 0.633 ns
+Actual Time    : 2.804 ns
 From           : PARTIDA
-To             : deslocador_uc:inst4|sreg.a
+To             : deslocador_uc:inst4|sreg.init
 From Clock     : --
 To Clock       : CLOCK
 Failed Paths   : 0
@@ -15,19 +15,29 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 9.229 ns
+Actual Time    : 8.109 ns
 From           : deslocador_uc:inst4|sreg.a
 To             : DSERIAL
 From Clock     : CLOCK
 To Clock       : --
 Failed Paths   : 0
 
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 6.612 ns
+From           : CLOCK
+To             : CLOCK2
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : -0.059 ns
+Actual Time    : -2.564 ns
 From           : PARTIDA
-To             : deslocador_uc:inst4|sreg.init
+To             : deslocador_uc:inst4|sreg.a
 From Clock     : --
 To Clock       : CLOCK
 Failed Paths   : 0
@@ -37,7 +47,7 @@ Slack          : N/A
 Required Time  : None
 Actual Time    : Restricted to 500.00 MHz ( period = 2.000 ns )
 From           : deslocador_uc:inst4|sreg.a
-To             : 74165:inst2|38
+To             : 74165:inst2|84
 From Clock     : CLOCK
 To Clock       : CLOCK
 Failed Paths   : 0

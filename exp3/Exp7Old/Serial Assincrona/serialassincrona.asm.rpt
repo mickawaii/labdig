@@ -1,5 +1,5 @@
 Assembler report for serialassincrona
-Tue Feb 26 18:09:19 2013
+Thu Sep 12 19:47:33 2013
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/altera/91sp2/quartus/serialassincrona/serialassincrona.sof
-  6. Assembler Device Options: C:/altera/91sp2/quartus/serialassincrona/serialassincrona.pof
+  5. Assembler Device Options: C:/Users/mick/Documents/labdig/exp3/Exp7Old/Serial Assincrona/serialassincrona.sof
+  6. Assembler Device Options: C:/Users/mick/Documents/labdig/exp3/Exp7Old/Serial Assincrona/serialassincrona.pof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Feb 26 18:09:19 2013 ;
+; Assembler Status      ; Successful - Thu Sep 12 19:47:33 2013 ;
 ; Revision Name         ; serialassincrona                      ;
 ; Top-level Entity Name ; serialassincrona                      ;
 ; Family                ; Stratix II                            ;
@@ -79,37 +79,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+---------------------------------------------------------------+
-; Assembler Generated Files                                     ;
-+---------------------------------------------------------------+
-; File Name                                                     ;
-+---------------------------------------------------------------+
-; C:/altera/91sp2/quartus/serialassincrona/serialassincrona.sof ;
-; C:/altera/91sp2/quartus/serialassincrona/serialassincrona.pof ;
-+---------------------------------------------------------------+
++------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                          ;
++------------------------------------------------------------------------------------+
+; File Name                                                                          ;
++------------------------------------------------------------------------------------+
+; C:/Users/mick/Documents/labdig/exp3/Exp7Old/Serial Assincrona/serialassincrona.sof ;
+; C:/Users/mick/Documents/labdig/exp3/Exp7Old/Serial Assincrona/serialassincrona.pof ;
++------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/altera/91sp2/quartus/serialassincrona/serialassincrona.sof ;
-+----------------+------------------------------------------------------------------------+
-; Option         ; Setting                                                                ;
-+----------------+------------------------------------------------------------------------+
-; Device         ; EP2S15F484C3                                                           ;
-; JTAG usercode  ; 0xFFFFFFFF                                                             ;
-; Checksum       ; 0x0027CF46                                                             ;
-+----------------+------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/mick/Documents/labdig/exp3/Exp7Old/Serial Assincrona/serialassincrona.sof ;
++----------------+---------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                     ;
++----------------+---------------------------------------------------------------------------------------------+
+; Device         ; EP2S15F484C3                                                                                ;
+; JTAG usercode  ; 0xFFFFFFFF                                                                                  ;
+; Checksum       ; 0x0027D589                                                                                  ;
++----------------+---------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/altera/91sp2/quartus/serialassincrona/serialassincrona.pof ;
-+--------------------+--------------------------------------------------------------------+
-; Option             ; Setting                                                            ;
-+--------------------+--------------------------------------------------------------------+
-; Device             ; EPC16                                                              ;
-; JTAG usercode      ; 0xFFFFFFFF                                                         ;
-; Checksum           ; 0x1EF46522                                                         ;
-; Compression Ratio  ; 3                                                                  ;
-+--------------------+--------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/mick/Documents/labdig/exp3/Exp7Old/Serial Assincrona/serialassincrona.pof ;
++--------------------+-----------------------------------------------------------------------------------------+
+; Option             ; Setting                                                                                 ;
++--------------------+-----------------------------------------------------------------------------------------+
+; Device             ; EPC16                                                                                   ;
+; JTAG usercode      ; 0xFFFFFFFF                                                                              ;
+; Checksum           ; 0x1EF4DA6E                                                                              ;
+; Compression Ratio  ; 3                                                                                       ;
++--------------------+-----------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -118,14 +118,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue Feb 26 18:09:17 2013
+    Info: Processing started: Thu Sep 12 19:47:27 2013
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off serialassincrona -c serialassincrona
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 231 megabytes
-    Info: Processing ended: Tue Feb 26 18:09:19 2013
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 216 megabytes
+    Info: Processing ended: Thu Sep 12 19:47:33 2013
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:04
 
 
